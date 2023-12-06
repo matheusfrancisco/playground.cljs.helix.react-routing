@@ -10,10 +10,10 @@
 
 (defn routes []
   ($ rrd/Routes
-     ($ rrd/Route {:path "/" :index true :element ($ home/home)}
-        ($ rrd/Route {:path "about" :element ($ about/about)})
-        ($ rrd/Route {:path "code/test" :element ($ code/code)})
-        ($ rrd/Route {:path "auth/callback" :element ($ code/callback)}))
+     ($ rrd/Route {:path "/home" :element ($ home/home)})
+     ($ rrd/Route {:path "/about" :element ($ about/about)})
+     ($ rrd/Route {:path "/code/test" :element ($ code/code)})
+     ($ rrd/Route {:path "/auth/callback" :element ($ code/callback)})
      #_($ rrd/Route {:path "*" :element ($ rrd/Navigate {:to "404"})})))
 
 (defnc providers [{:keys [children]}]
