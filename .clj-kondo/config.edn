@@ -1,0 +1,2 @@
+{:hooks {:analyze-call {front.lib.helix/defnc clj-kondo.lilactown.helix/defnc}}
+ :linters {:unsorted-required-namespaces {:level :warning}}}

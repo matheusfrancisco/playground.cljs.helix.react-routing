@@ -1,0 +1,19 @@
+{:paths ["src" "resources"]
+ :deps {org.clojure/clojure {:mvn/version "1.11.1"}
+        ;; front
+        lilactown/helix {:mvn/version "0.1.9"}
+        funcool/promesa {:mvn/version "9.0.494"}}
+
+ :aliases
+ {;; frontend
+
+  :front-dev {:extra-paths ["test/front"]
+              :extra-deps {cider/cider-nrepl {:mvn/version "0.28.6"}
+                           thheller/shadow-cljs {:mvn/version "2.20.10"}}}
+
+  :clojure-lsp {:replace-deps {com.github.clojure-lsp/clojure-lsp-standalone {:mvn/version "2022.09.01-15.27.31"}}
+                :main-opts ["-m" "clojure-lsp.main"]}
+
+  ;; clj -M:nrepl
+  :nrepl {:extra-deps {cider/cider-nrepl {:mvn/version "0.30.0"}}
+          :main-opts ["-m" "nrepl.cmdline" "--middleware" "[cider.nrepl/cider-middleware]"]}}}
