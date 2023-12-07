@@ -36,44 +36,44 @@ shadow.markup.react.impl.interop.arr_append = (function shadow$markup$react$impl
 return cljs.core.reduce.cljs$core$IFn$_invoke$arity$3(shadow.markup.react.impl.interop.arr_append_STAR_,arr,tail);
 });
 shadow.markup.react.impl.interop.create_element = (function shadow$markup$react$impl$interop$create_element(type,args){
-var vec__22905 = args;
-var seq__22906 = cljs.core.seq(vec__22905);
-var first__22907 = cljs.core.first(seq__22906);
-var seq__22906__$1 = cljs.core.next(seq__22906);
-var head = first__22907;
-var tail = seq__22906__$1;
+var vec__23120 = args;
+var seq__23121 = cljs.core.seq(vec__23120);
+var first__23122 = cljs.core.first(seq__23121);
+var seq__23121__$1 = cljs.core.next(seq__23121);
+var head = first__23122;
+var tail = seq__23121__$1;
 if(cljs.core.map_QMARK_(head)){
-return shadow.markup.react.impl.interop.create_element_STAR_((function (){var G__22909 = [type,shadow.markup.react.impl.interop.convert_props(head)];
-shadow.markup.react.impl.interop.arr_append(G__22909,tail);
+return shadow.markup.react.impl.interop.create_element_STAR_((function (){var G__23123 = [type,shadow.markup.react.impl.interop.convert_props(head)];
+shadow.markup.react.impl.interop.arr_append(G__23123,tail);
 
-return G__22909;
+return G__23123;
 })());
 } else {
 if((head == null)){
-return shadow.markup.react.impl.interop.create_element_STAR_((function (){var G__22912 = [type,null];
-shadow.markup.react.impl.interop.arr_append(G__22912,tail);
+return shadow.markup.react.impl.interop.create_element_STAR_((function (){var G__23124 = [type,null];
+shadow.markup.react.impl.interop.arr_append(G__23124,tail);
 
-return G__22912;
+return G__23124;
 })());
 } else {
 if(shadow.markup.react.impl.interop.element_QMARK_(head)){
-return shadow.markup.react.impl.interop.create_element_STAR_((function (){var G__22914 = [type,null];
-shadow.markup.react.impl.interop.arr_append(G__22914,args);
+return shadow.markup.react.impl.interop.create_element_STAR_((function (){var G__23125 = [type,null];
+shadow.markup.react.impl.interop.arr_append(G__23125,args);
 
-return G__22914;
+return G__23125;
 })());
 } else {
 if(cljs.core.object_QMARK_(head)){
-return shadow.markup.react.impl.interop.create_element_STAR_((function (){var G__22917 = [type,head];
-shadow.markup.react.impl.interop.arr_append(G__22917,tail);
+return shadow.markup.react.impl.interop.create_element_STAR_((function (){var G__23128 = [type,head];
+shadow.markup.react.impl.interop.arr_append(G__23128,tail);
 
-return G__22917;
+return G__23128;
 })());
 } else {
-return shadow.markup.react.impl.interop.create_element_STAR_((function (){var G__22918 = [type,null];
-shadow.markup.react.impl.interop.arr_append(G__22918,args);
+return shadow.markup.react.impl.interop.create_element_STAR_((function (){var G__23130 = [type,null];
+shadow.markup.react.impl.interop.arr_append(G__23130,args);
 
-return G__22918;
+return G__23130;
 })());
 
 }

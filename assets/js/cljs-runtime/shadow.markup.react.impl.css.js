@@ -30,8 +30,8 @@ var or__5045__auto__ = shadow.dom.by_id.cljs$core$IFn$_invoke$arity$1(styles_con
 if(cljs.core.truth_(or__5045__auto__)){
 return or__5045__auto__;
 } else {
-var node = (function (){var G__27487 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),styles_container_id,new cljs.core.Keyword(null,"type","type",1174270348),"text/css"], null)], null);
-return (shadow.dom.build.cljs$core$IFn$_invoke$arity$1 ? shadow.dom.build.cljs$core$IFn$_invoke$arity$1(G__27487) : shadow.dom.build.call(null,G__27487));
+var node = (function (){var G__27489 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),styles_container_id,new cljs.core.Keyword(null,"type","type",1174270348),"text/css"], null)], null);
+return (shadow.dom.build.cljs$core$IFn$_invoke$arity$1 ? shadow.dom.build.cljs$core$IFn$_invoke$arity$1(G__27489) : shadow.dom.build.call(null,G__27489));
 })();
 shadow.dom.append.cljs$core$IFn$_invoke$arity$2(document.head,node);
 
@@ -51,8 +51,8 @@ while(true){
 if((i < n__5636__auto__)){
 container.sheet.insertRule(cljs.core.nth.cljs$core$IFn$_invoke$arity$2(rules,i),(n + i));
 
-var G__27641 = (i + (1));
-i = G__27641;
+var G__27838 = (i + (1));
+i = G__27838;
 continue;
 } else {
 return null;
@@ -65,8 +65,8 @@ break;
  */
 shadow.markup.react.impl.css.regenerate_styles_BANG_ = (function shadow$markup$react$impl$css$regenerate_styles_BANG_(){
 var env = cljs.core.deref(shadow.markup.react.impl.css.env_ref);
-var styles = clojure.string.join.cljs$core$IFn$_invoke$arity$2("\n",cljs.core.mapcat.cljs$core$IFn$_invoke$arity$variadic((function (p1__27490_SHARP_){
-return shadow.markup.react.impl.css.get_rules_for_el(env,p1__27490_SHARP_);
+var styles = clojure.string.join.cljs$core$IFn$_invoke$arity$2("\n",cljs.core.mapcat.cljs$core$IFn$_invoke$arity$variadic((function (p1__27494_SHARP_){
+return shadow.markup.react.impl.css.get_rules_for_el(env,p1__27494_SHARP_);
 }),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.vals(cljs.core.deref(shadow.markup.react.impl.css.active_elements_ref))], 0)));
 var container = shadow.markup.react.impl.css.style_container();
 return (container.textContent = styles);
@@ -92,26 +92,26 @@ if(shadow.markup.env.DEBUG){
 return shadow.markup.react.impl.css.regenerate_styles_BANG_();
 } else {
 try{return shadow.markup.react.impl.css.insert_styles_BANG_(el);
-}catch (e27492){var e = e27492;
+}catch (e27539){var e = e27539;
 console.error("insert-styles failed",e,el);
 
 return shadow.markup.react.impl.css.regenerate_styles_BANG_();
 }}
 });
-shadow.markup.react.impl.css.check_conflicting_props_BANG_ = (function shadow$markup$react$impl$css$check_conflicting_props_BANG_(p__27494){
-var map__27496 = p__27494;
-var map__27496__$1 = cljs.core.__destructure_map(map__27496);
-var props = map__27496__$1;
-var class$ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27496__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
-var className = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27496__$1,new cljs.core.Keyword(null,"className","className",-1983287057));
-var classes = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27496__$1,new cljs.core.Keyword(null,"classes","classes",2037804510));
-var total = (function (){var G__27500 = (0);
-var G__27500__$1 = (cljs.core.truth_(class$)?(G__27500 + (1)):G__27500);
-var G__27500__$2 = (cljs.core.truth_(className)?(G__27500__$1 + (1)):G__27500__$1);
+shadow.markup.react.impl.css.check_conflicting_props_BANG_ = (function shadow$markup$react$impl$css$check_conflicting_props_BANG_(p__27541){
+var map__27542 = p__27541;
+var map__27542__$1 = cljs.core.__destructure_map(map__27542);
+var props = map__27542__$1;
+var class$ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27542__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
+var className = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27542__$1,new cljs.core.Keyword(null,"className","className",-1983287057));
+var classes = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27542__$1,new cljs.core.Keyword(null,"classes","classes",2037804510));
+var total = (function (){var G__27543 = (0);
+var G__27543__$1 = (cljs.core.truth_(class$)?(G__27543 + (1)):G__27543);
+var G__27543__$2 = (cljs.core.truth_(className)?(G__27543__$1 + (1)):G__27543__$1);
 if(cljs.core.truth_(classes)){
-return (G__27500__$2 + (1));
+return (G__27543__$2 + (1));
 } else {
-return G__27500__$2;
+return G__27543__$2;
 }
 })();
 if((total > (1))){
@@ -212,8 +212,8 @@ return (self__.style_fn.cljs$core$IFn$_invoke$arity$1 ? self__.style_fn.cljs$cor
 (shadow.markup.react.impl.css.StyledElement.prototype.call = (function (unused__11783__auto__){
 var self__ = this;
 var self__ = this;
-var G__27502 = (arguments.length - (1));
-switch (G__27502) {
+var G__27627 = (arguments.length - (1));
+switch (G__27627) {
 case (1):
 return self__.cljs$core$IFn$_invoke$arity$1((arguments[(1)]));
 
@@ -288,10 +288,10 @@ throw (new Error(["Invalid arity: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(
 }
 }));
 
-(shadow.markup.react.impl.css.StyledElement.prototype.apply = (function (self__,args27501){
+(shadow.markup.react.impl.css.StyledElement.prototype.apply = (function (self__,args27580){
 var self__ = this;
 var self____$1 = this;
-return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone(args27501)));
+return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone(args27580)));
 }));
 
 (shadow.markup.react.impl.css.StyledElement.prototype.cljs$core$IFn$_invoke$arity$1 = (function (props){
