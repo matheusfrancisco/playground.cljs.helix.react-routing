@@ -1,5 +1,6 @@
 node_modules/
-resources/front/public/assets
+/public/assets/
+/public/js/
 
 /out
 /checkouts
