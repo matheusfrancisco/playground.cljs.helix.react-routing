@@ -42,14 +42,14 @@ return module$node_modules$react$index;
  */
 helix.core.$ = (function helix$core$$(var_args){
 var args__5775__auto__ = [];
-var len__5769__auto___21957 = arguments.length;
-var i__5770__auto___21959 = (0);
+var len__5769__auto___21790 = arguments.length;
+var i__5770__auto___21791 = (0);
 while(true){
-if((i__5770__auto___21959 < len__5769__auto___21957)){
-args__5775__auto__.push((arguments[i__5770__auto___21959]));
+if((i__5770__auto___21791 < len__5769__auto___21790)){
+args__5775__auto__.push((arguments[i__5770__auto___21791]));
 
-var G__21961 = (i__5770__auto___21959 + (1));
-i__5770__auto___21959 = G__21961;
+var G__21792 = (i__5770__auto___21791 + (1));
+i__5770__auto___21791 = G__21792;
 continue;
 } else {
 }
@@ -86,11 +86,11 @@ return cljs.core.apply.cljs$core$IFn$_invoke$arity$4(helix.core.create_element,t
 (helix.core.$.cljs$lang$maxFixedArity = (1));
 
 /** @this {Function} */
-(helix.core.$.cljs$lang$applyTo = (function (seq21804){
-var G__21805 = cljs.core.first(seq21804);
-var seq21804__$1 = cljs.core.next(seq21804);
+(helix.core.$.cljs$lang$applyTo = (function (seq21733){
+var G__21734 = cljs.core.first(seq21733);
+var seq21733__$1 = cljs.core.next(seq21733);
 var self__5754__auto__ = this;
-return self__5754__auto__.cljs$core$IFn$_invoke$arity$variadic(G__21805,seq21804__$1);
+return self__5754__auto__.cljs$core$IFn$_invoke$arity$variadic(G__21734,seq21733__$1);
 }));
 
 /**
@@ -115,7 +115,7 @@ helix.core.$$ = helix.core.$;
  */
 helix.core.IExtractType = function(){};
 
-var helix$core$IExtractType$_type$dyn_21965 = (function (factory){
+var helix$core$IExtractType$_type$dyn_21793 = (function (factory){
 var x__5393__auto__ = (((factory == null))?null:factory);
 var m__5394__auto__ = (helix.core._type[goog.typeOf(x__5393__auto__)]);
 if((!((m__5394__auto__ == null)))){
@@ -136,7 +136,7 @@ helix.core._type = (function helix$core$_type(factory){
 if((((!((factory == null)))) && ((!((factory.helix$core$IExtractType$_type$arity$1 == null)))))){
 return factory.helix$core$IExtractType$_type$arity$1(factory);
 } else {
-return helix$core$IExtractType$_type$dyn_21965(factory);
+return helix$core$IExtractType$_type$dyn_21793(factory);
 }
 });
 
@@ -154,35 +154,35 @@ return helix.core._type(f);
  *   Use `helix.core/type` to extract the original React component.
  */
 helix.core.factory = (function helix$core$factory(type){
-var x21844 = (function() { 
+var x21750 = (function() { 
 var helix$core$factory_$_factory__delegate = function (args){
 return cljs.core.apply.cljs$core$IFn$_invoke$arity$3(helix.core.$,type,args);
 };
 var helix$core$factory_$_factory = function (var_args){
 var args = null;
 if (arguments.length > 0) {
-var G__21971__i = 0, G__21971__a = new Array(arguments.length -  0);
-while (G__21971__i < G__21971__a.length) {G__21971__a[G__21971__i] = arguments[G__21971__i + 0]; ++G__21971__i;}
-  args = new cljs.core.IndexedSeq(G__21971__a,0,null);
+var G__21794__i = 0, G__21794__a = new Array(arguments.length -  0);
+while (G__21794__i < G__21794__a.length) {G__21794__a[G__21794__i] = arguments[G__21794__i + 0]; ++G__21794__i;}
+  args = new cljs.core.IndexedSeq(G__21794__a,0,null);
 } 
 return helix$core$factory_$_factory__delegate.call(this,args);};
 helix$core$factory_$_factory.cljs$lang$maxFixedArity = 0;
-helix$core$factory_$_factory.cljs$lang$applyTo = (function (arglist__21972){
-var args = cljs.core.seq(arglist__21972);
+helix$core$factory_$_factory.cljs$lang$applyTo = (function (arglist__21795){
+var args = cljs.core.seq(arglist__21795);
 return helix$core$factory_$_factory__delegate(args);
 });
 helix$core$factory_$_factory.cljs$core$IFn$_invoke$arity$variadic = helix$core$factory_$_factory__delegate;
 return helix$core$factory_$_factory;
 })()
 ;
-(x21844.helix$core$IExtractType$ = cljs.core.PROTOCOL_SENTINEL);
+(x21750.helix$core$IExtractType$ = cljs.core.PROTOCOL_SENTINEL);
 
-(x21844.helix$core$IExtractType$_type$arity$1 = (function (_){
+(x21750.helix$core$IExtractType$_type$arity$1 = (function (_){
 var ___$1 = this;
 return type;
 }));
 
-return x21844;
+return x21750;
 });
 /**
  * Creates a factory function for a component defined via `defnc`, that when
@@ -192,7 +192,7 @@ return x21844;
  *   Use `helix.core/type` to extract the original component this was called with.
  */
 helix.core.cljs_factory = (function helix$core$cljs_factory(type){
-var x21849 = (function() { 
+var x21757 = (function() { 
 var helix$core$cljs_factory_$_factory__delegate = function (args){
 if(cljs.core.map_QMARK_(cljs.core.first(args))){
 var props = cljs.core.first(args);
@@ -204,28 +204,28 @@ return cljs.core.apply.cljs$core$IFn$_invoke$arity$4(module$node_modules$react$i
 var helix$core$cljs_factory_$_factory = function (var_args){
 var args = null;
 if (arguments.length > 0) {
-var G__21973__i = 0, G__21973__a = new Array(arguments.length -  0);
-while (G__21973__i < G__21973__a.length) {G__21973__a[G__21973__i] = arguments[G__21973__i + 0]; ++G__21973__i;}
-  args = new cljs.core.IndexedSeq(G__21973__a,0,null);
+var G__21796__i = 0, G__21796__a = new Array(arguments.length -  0);
+while (G__21796__i < G__21796__a.length) {G__21796__a[G__21796__i] = arguments[G__21796__i + 0]; ++G__21796__i;}
+  args = new cljs.core.IndexedSeq(G__21796__a,0,null);
 } 
 return helix$core$cljs_factory_$_factory__delegate.call(this,args);};
 helix$core$cljs_factory_$_factory.cljs$lang$maxFixedArity = 0;
-helix$core$cljs_factory_$_factory.cljs$lang$applyTo = (function (arglist__21974){
-var args = cljs.core.seq(arglist__21974);
+helix$core$cljs_factory_$_factory.cljs$lang$applyTo = (function (arglist__21797){
+var args = cljs.core.seq(arglist__21797);
 return helix$core$cljs_factory_$_factory__delegate(args);
 });
 helix$core$cljs_factory_$_factory.cljs$core$IFn$_invoke$arity$variadic = helix$core$cljs_factory_$_factory__delegate;
 return helix$core$cljs_factory_$_factory;
 })()
 ;
-(x21849.helix$core$IExtractType$ = cljs.core.PROTOCOL_SENTINEL);
+(x21757.helix$core$IExtractType$ = cljs.core.PROTOCOL_SENTINEL);
 
-(x21849.helix$core$IExtractType$_type$arity$1 = (function (_){
+(x21757.helix$core$IExtractType$_type$arity$1 = (function (_){
 var ___$1 = this;
 return type;
 }));
 
-return x21849;
+return x21757;
 });
 helix.core.assoc_some = (function helix$core$assoc_some(m,k,x){
 if((!((x == null)))){
@@ -257,8 +257,8 @@ return cljs_bean.core.bean.cljs$core$IFn$_invoke$arity$1(o);
 helix.core.props_kvs_identical_QMARK_ = (function helix$core$props_kvs_identical_QMARK_(prev,cur){
 var prev_props = helix.core.extract_cljs_props(prev);
 var cur_props = helix.core.extract_cljs_props(cur);
-return ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.count(prev_props),cljs.core.count(cur_props))) && (cljs.core.every_QMARK_((function (p1__21865_SHARP_){
-return (cljs.core.get.cljs$core$IFn$_invoke$arity$2(prev_props,p1__21865_SHARP_) === cljs.core.get.cljs$core$IFn$_invoke$arity$2(cur_props,p1__21865_SHARP_));
+return ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.count(prev_props),cljs.core.count(cur_props))) && (cljs.core.every_QMARK_((function (p1__21758_SHARP_){
+return (cljs.core.get.cljs$core$IFn$_invoke$arity$2(prev_props,p1__21758_SHARP_) === cljs.core.get.cljs$core$IFn$_invoke$arity$2(cur_props,p1__21758_SHARP_));
 }),cljs.core.keys(cur_props))));
 });
 /**
@@ -267,8 +267,8 @@ return (cljs.core.get.cljs$core$IFn$_invoke$arity$2(prev_props,p1__21865_SHARP_)
  *   `compare` should return true if props are equal, and false if not.
  */
 helix.core.memo = (function helix$core$memo(var_args){
-var G__21904 = arguments.length;
-switch (G__21904) {
+var G__21760 = arguments.length;
+switch (G__21760) {
 case 1:
 return helix.core.memo.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -289,9 +289,9 @@ return module$node_modules$react$index.memo(component,helix.core.props_kvs_ident
 
 (helix.core.memo.cljs$core$IFn$_invoke$arity$2 = (function (component,compare){
 return module$node_modules$react$index.memo(component,(function helix$core$memo_compare(o,o_SINGLEQUOTE_){
-var G__21909 = helix.core.extract_cljs_props(o);
-var G__21910 = helix.core.extract_cljs_props(o_SINGLEQUOTE_);
-return (compare.cljs$core$IFn$_invoke$arity$2 ? compare.cljs$core$IFn$_invoke$arity$2(G__21909,G__21910) : compare.call(null,G__21909,G__21910));
+var G__21761 = helix.core.extract_cljs_props(o);
+var G__21762 = helix.core.extract_cljs_props(o_SINGLEQUOTE_);
+return (compare.cljs$core$IFn$_invoke$arity$2 ? compare.cljs$core$IFn$_invoke$arity$2(G__21761,G__21762) : compare.call(null,G__21761,G__21762));
 }));
 }));
 
@@ -303,10 +303,10 @@ return (compare.cljs$core$IFn$_invoke$arity$2 ? compare.cljs$core$IFn$_invoke$ar
 helix.core.create_component = (function helix$core$create_component(spec,statics){
 var render = spec.render;
 var render_SINGLEQUOTE_ = (function (this$){
-var G__21915 = this$;
-var G__21916 = helix.core.extract_cljs_props(this$.props);
-var G__21917 = this$.state;
-return (render.cljs$core$IFn$_invoke$arity$3 ? render.cljs$core$IFn$_invoke$arity$3(G__21915,G__21916,G__21917) : render.call(null,G__21915,G__21916,G__21917));
+var G__21763 = this$;
+var G__21764 = helix.core.extract_cljs_props(this$.props);
+var G__21765 = this$.state;
+return (render.cljs$core$IFn$_invoke$arity$3 ? render.cljs$core$IFn$_invoke$arity$3(G__21763,G__21764,G__21765) : render.call(null,G__21763,G__21764,G__21765));
 });
 helix.core.goog$module$goog$object.set(spec,"render",render_SINGLEQUOTE_);
 
