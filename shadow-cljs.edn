@@ -5,7 +5,4 @@
                            :reload-strategy :full
                            :http-port 8000
                            :http-root "public"}
-                :dev      {:modules {:core {:init-fn front.core/init}}}
-                :release  {:modules {:core {:init-fn front.core/init}}
-                           :compiler-options {:optimizations :advanced
-                                              :infer-externs :auto}}}}}
+                :dev      {:modules {:core {:init-fn front.core/init}}}}}}
