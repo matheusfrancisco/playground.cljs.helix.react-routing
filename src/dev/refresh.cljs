@@ -1,6 +1,6 @@
 (ns dev.refresh
-  (:require [helix.experimental.refresh :as r]
-            [front.core :as app]))
+  (:require [front.core :as app]
+            [helix.experimental.refresh :as r]))
 
 (r/inject-hook!)
 

@@ -1,9 +1,7 @@
 (ns front.home
   (:require
    [front.lib.helix :refer [defnc]]
-   [helix.dom :as dom]
-   [react-router-dom :as rrd]
-   [shadow.markup.react :refer [$]]))
+   [helix.dom :as dom]))
 
 (defnc home []
   (dom/div

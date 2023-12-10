@@ -9,12 +9,13 @@
    [helix.core :refer [$ defnc]]))
 
 (defn routes []
-  ($ rrd/Routes
-     ($ rrd/Route {:path "/home" :element ($ home/home)})
+
+  ($ rrd/Switch
+     ($ rrd/Route {:path "/" :exact true :element ($ home/home)})
      ($ rrd/Route {:path "/about" :element ($ about/about)})
      ($ rrd/Route {:path "/code/test" :element ($ code/code)})
      ($ rrd/Route {:path "/auth/callback" :element ($ code/callback)})
-     #_($ rrd/Route {:path "*" :element ($ rrd/Navigate {:to "404"})})))
+     ($ rrd/Route {:path "*" :element ($ rrd/Navigate {:to "404"})})))
 
 (defnc providers [{:keys [children]}]
   ($ rrd/BrowserRouter
