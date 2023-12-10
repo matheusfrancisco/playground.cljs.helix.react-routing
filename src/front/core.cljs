@@ -3,23 +3,37 @@
    ["react" :as r]
    ["react-dom/client" :as rdom]
    ["react-router-dom" :as rrd]
-   [front.about :as about]
-   [front.code :as code]
-   [front.home :as home]
-   [helix.core :refer [$ defnc]]))
-
-(defn routes []
-
-  ($ rrd/Switch
-     ($ rrd/Route {:path "/" :exact true :element ($ home/home)})
-     ($ rrd/Route {:path "/about" :element ($ about/about)})
-     ($ rrd/Route {:path "/code/test" :element ($ code/code)})
-     ($ rrd/Route {:path "/auth/callback" :element ($ code/callback)})
-     ($ rrd/Route {:path "*" :element ($ rrd/Navigate {:to "404"})})))
+   [front.lib.helix :refer [defnc]]
+   [helix.core :refer [$ <>]]
+   [helix.dom :as dom]))
 
 (defnc providers [{:keys [children]}]
-  ($ rrd/BrowserRouter
-     children))
+  ($ rrd/BrowserRouter children))
+
+(defnc layout []
+  (<>
+   ($ rrd/Outlet)))
+
+(defnc home-page []
+  (dom/div "home"))
+
+(defnc code-page []
+  (dom/div "code"))
+
+(defnc about-page []
+  (dom/div "about"))
+
+(defnc not-found-page []
+  (dom/div "not found"))
+
+(defn routes []
+  ($ rrd/Routes
+     ($ rrd/Route {:path "/" :element ($ layout)}
+        ($ rrd/Route {:index true :element ($ home-page)})
+        ($ rrd/Route {:path "code" :element ($ code-page)})
+        ($ rrd/Route {:path "about" :element ($ about-page)})
+        ($ rrd/Route {:path "404" :element ($ not-found-page)}))
+     ($ rrd/Route {:path "*" :element ($ rrd/Navigate {:to "404"})})))
 
 (defnc app []
   ($ providers ($ routes)))
