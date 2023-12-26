@@ -27,8 +27,8 @@
   ($ rrd/BrowserRouter
      ($ rrd/Routes
         ($ rrd/Route {:path "/home-page-eg" :element ($ home-page)})
-        ($ rrd/Route {:path "code-page-eg" :element ($ code-page)})
-        ($ rrd/Route {:path "about-page-eg" :element ($ about-page)})
+        ($ rrd/Route {:path "/code-page-eg" :element ($ code-page)})
+        ($ rrd/Route {:path "/about-page-eg" :element ($ about-page)})
         ($ rrd/Route {:path "404" :element ($ not-found-page)}))))
 
 (defonce root
