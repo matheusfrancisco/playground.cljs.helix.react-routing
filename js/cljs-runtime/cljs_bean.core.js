@@ -42,11 +42,11 @@ cljs_bean.core.empty_map = cljs.core.PersistentArrayMap.EMPTY;
 cljs_bean.core.snapshot = (function cljs_bean$core$snapshot(x,prop__GT_key,key__GT_prop,recursive_QMARK_){
 var result = cljs.core.volatile_BANG_(cljs.core.transient$(cljs_bean.core.empty_map));
 cljs_bean.core.goog$module$goog$object.forEach(x,(function (v,k,_){
-return result.cljs$core$IVolatile$_vreset_BANG_$arity$2(null,cljs.core.assoc_BANG_.cljs$core$IFn$_invoke$arity$3(result.cljs$core$IDeref$_deref$arity$1(null),(prop__GT_key.cljs$core$IFn$_invoke$arity$1 ? prop__GT_key.cljs$core$IFn$_invoke$arity$1(k) : prop__GT_key.call(null,k)),(function (){var G__21565 = v;
+return result.cljs$core$IVolatile$_vreset_BANG_$arity$2(null,cljs.core.assoc_BANG_.cljs$core$IFn$_invoke$arity$3(result.cljs$core$IDeref$_deref$arity$1(null),(prop__GT_key.cljs$core$IFn$_invoke$arity$1 ? prop__GT_key.cljs$core$IFn$_invoke$arity$1(k) : prop__GT_key.call(null,k)),(function (){var G__21595 = v;
 if(cljs.core.truth_(recursive_QMARK_)){
-return cljs_bean.core.__GT_val(G__21565,prop__GT_key,key__GT_prop);
+return cljs_bean.core.__GT_val(G__21595,prop__GT_key,key__GT_prop);
 } else {
-return G__21565;
+return G__21595;
 }
 })()));
 }));
@@ -55,11 +55,11 @@ return cljs.core.persistent_BANG_(cljs.core.deref(result));
 });
 cljs_bean.core.indexed_entry = (function cljs_bean$core$indexed_entry(obj,prop__GT_key,key__GT_prop,recursive_QMARK_,arr,i){
 var prop = (arr[i]);
-return (new cljs.core.MapEntry((prop__GT_key.cljs$core$IFn$_invoke$arity$1 ? prop__GT_key.cljs$core$IFn$_invoke$arity$1(prop) : prop__GT_key.call(null,prop)),(function (){var G__21570 = (obj[prop]);
+return (new cljs.core.MapEntry((prop__GT_key.cljs$core$IFn$_invoke$arity$1 ? prop__GT_key.cljs$core$IFn$_invoke$arity$1(prop) : prop__GT_key.call(null,prop)),(function (){var G__21598 = (obj[prop]);
 if(recursive_QMARK_){
-return cljs_bean.core.__GT_val(G__21570,prop__GT_key,key__GT_prop);
+return cljs_bean.core.__GT_val(G__21598,prop__GT_key,key__GT_prop);
 } else {
-return G__21570;
+return G__21598;
 }
 })(),null));
 });
@@ -102,11 +102,11 @@ this.cljs$lang$protocol_mask$partition1$ = 56;
 var self__ = this;
 var ___$1 = this;
 if(self__.editable_QMARK_){
-var G__21582 = (self__.obj[(self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1 ? self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1(k) : self__.key__GT_prop.call(null,k))]);
+var G__21623 = (self__.obj[(self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1 ? self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1(k) : self__.key__GT_prop.call(null,k))]);
 if(self__.recursive_QMARK_){
-return cljs_bean.core.__GT_val(G__21582,self__.prop__GT_key,self__.key__GT_prop);
+return cljs_bean.core.__GT_val(G__21623,self__.prop__GT_key,self__.key__GT_prop);
 } else {
-return G__21582;
+return G__21623;
 }
 } else {
 throw (new Error("lookup after persistent!"));
@@ -118,11 +118,11 @@ var self__ = this;
 var ___$1 = this;
 if(self__.editable_QMARK_){
 var ret = cljs_bean.core.goog$module$goog$object.get(self__.obj,(self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1 ? self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1(k) : self__.key__GT_prop.call(null,k)),not_found);
-var G__21584 = ret;
+var G__21625 = ret;
 if(((self__.recursive_QMARK_) && ((!((ret === not_found)))))){
-return cljs_bean.core.__GT_val(G__21584,self__.prop__GT_key,self__.key__GT_prop);
+return cljs_bean.core.__GT_val(G__21625,self__.prop__GT_key,self__.key__GT_prop);
 } else {
-return G__21584;
+return G__21625;
 }
 } else {
 throw (new Error("lookup after persistent!"));
@@ -164,11 +164,11 @@ if(self__.editable_QMARK_){
 if(cljs_bean.core.snapshot_QMARK_(k,v,self__.prop__GT_key,self__.recursive_QMARK_)){
 return cljs.core._assoc_BANG_(cljs.core.transient$(cljs_bean.core.snapshot(self__.obj,self__.prop__GT_key,self__.key__GT_prop,self__.recursive_QMARK_)),k,v);
 } else {
-(self__.obj[(self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1 ? self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1(k) : self__.key__GT_prop.call(null,k))] = (function (){var G__21587 = v;
+(self__.obj[(self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1 ? self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1(k) : self__.key__GT_prop.call(null,k))] = (function (){var G__21626 = v;
 if(self__.recursive_QMARK_){
-return cljs_bean.core.unwrap(G__21587);
+return cljs_bean.core.unwrap(G__21626);
 } else {
-return G__21587;
+return G__21626;
 }
 })());
 
@@ -198,8 +198,8 @@ throw (new Error("dissoc! after persistent!"));
 (cljs_bean.core.TransientBean.prototype.call = (function (unused__11783__auto__){
 var self__ = this;
 var self__ = this;
-var G__21589 = (arguments.length - (1));
-switch (G__21589) {
+var G__21627 = (arguments.length - (1));
+switch (G__21627) {
 case (1):
 return self__.cljs$core$IFn$_invoke$arity$1((arguments[(1)]));
 
@@ -214,21 +214,21 @@ throw (new Error(["Invalid arity: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(
 }
 }));
 
-(cljs_bean.core.TransientBean.prototype.apply = (function (self__,args21581){
+(cljs_bean.core.TransientBean.prototype.apply = (function (self__,args21622){
 var self__ = this;
 var self____$1 = this;
-return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone(args21581)));
+return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone(args21622)));
 }));
 
 (cljs_bean.core.TransientBean.prototype.cljs$core$IFn$_invoke$arity$1 = (function (k){
 var self__ = this;
 var _ = this;
 if(self__.editable_QMARK_){
-var G__21591 = (self__.obj[(self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1 ? self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1(k) : self__.key__GT_prop.call(null,k))]);
+var G__21629 = (self__.obj[(self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1 ? self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1(k) : self__.key__GT_prop.call(null,k))]);
 if(self__.recursive_QMARK_){
-return cljs_bean.core.__GT_val(G__21591,self__.prop__GT_key,self__.key__GT_prop);
+return cljs_bean.core.__GT_val(G__21629,self__.prop__GT_key,self__.key__GT_prop);
 } else {
-return G__21591;
+return G__21629;
 }
 } else {
 throw (new Error("lookup after persistent!"));
@@ -240,11 +240,11 @@ var self__ = this;
 var _ = this;
 if(self__.editable_QMARK_){
 var ret = cljs_bean.core.goog$module$goog$object.get(self__.obj,(self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1 ? self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1(k) : self__.key__GT_prop.call(null,k)),not_found);
-var G__21593 = ret;
+var G__21631 = ret;
 if(((self__.recursive_QMARK_) && ((!((ret === not_found)))))){
-return cljs_bean.core.__GT_val(G__21593,self__.prop__GT_key,self__.key__GT_prop);
+return cljs_bean.core.__GT_val(G__21631,self__.prop__GT_key,self__.key__GT_prop);
 } else {
-return G__21593;
+return G__21631;
 }
 } else {
 throw (new Error("lookup after persistent!"));
@@ -361,56 +361,56 @@ return this$.cljs$core$IEquiv$_equiv$arity$2(null,other);
 }));
 
 (cljs_bean.core.BeanSeq.prototype.indexOf = (function() {
-var G__21763 = null;
-var G__21763__1 = (function (x){
+var G__21759 = null;
+var G__21759__1 = (function (x){
 var self__ = this;
 var coll = this;
 return cljs_bean.from.cljs.core._indexOf.cljs$core$IFn$_invoke$arity$3(coll,x,(0));
 });
-var G__21763__2 = (function (x,start){
+var G__21759__2 = (function (x,start){
 var self__ = this;
 var coll = this;
 return cljs_bean.from.cljs.core._indexOf.cljs$core$IFn$_invoke$arity$3(coll,x,start);
 });
-G__21763 = function(x,start){
+G__21759 = function(x,start){
 switch(arguments.length){
 case 1:
-return G__21763__1.call(this,x);
+return G__21759__1.call(this,x);
 case 2:
-return G__21763__2.call(this,x,start);
+return G__21759__2.call(this,x,start);
 }
 throw(new Error('Invalid arity: ' + arguments.length));
 };
-G__21763.cljs$core$IFn$_invoke$arity$1 = G__21763__1;
-G__21763.cljs$core$IFn$_invoke$arity$2 = G__21763__2;
-return G__21763;
+G__21759.cljs$core$IFn$_invoke$arity$1 = G__21759__1;
+G__21759.cljs$core$IFn$_invoke$arity$2 = G__21759__2;
+return G__21759;
 })()
 );
 
 (cljs_bean.core.BeanSeq.prototype.lastIndexOf = (function() {
-var G__21764 = null;
-var G__21764__1 = (function (x){
+var G__21760 = null;
+var G__21760__1 = (function (x){
 var self__ = this;
 var coll = this;
 return cljs_bean.from.cljs.core._lastIndexOf.cljs$core$IFn$_invoke$arity$3(coll,x,cljs.core.count(coll));
 });
-var G__21764__2 = (function (x,start){
+var G__21760__2 = (function (x,start){
 var self__ = this;
 var coll = this;
 return cljs_bean.from.cljs.core._lastIndexOf.cljs$core$IFn$_invoke$arity$3(coll,x,start);
 });
-G__21764 = function(x,start){
+G__21760 = function(x,start){
 switch(arguments.length){
 case 1:
-return G__21764__1.call(this,x);
+return G__21760__1.call(this,x);
 case 2:
-return G__21764__2.call(this,x,start);
+return G__21760__2.call(this,x,start);
 }
 throw(new Error('Invalid arity: ' + arguments.length));
 };
-G__21764.cljs$core$IFn$_invoke$arity$1 = G__21764__1;
-G__21764.cljs$core$IFn$_invoke$arity$2 = G__21764__2;
-return G__21764;
+G__21760.cljs$core$IFn$_invoke$arity$1 = G__21760__1;
+G__21760.cljs$core$IFn$_invoke$arity$2 = G__21760__2;
+return G__21760;
 })()
 );
 
@@ -603,11 +603,11 @@ var v = cljs_bean.core.goog$module$goog$object.get(self__.obj,(self__.key__GT_pr
 if((v === cljs_bean.core.lookup_sentinel)){
 return null;
 } else {
-return (new cljs.core.MapEntry(k,(function (){var G__21616 = v;
+return (new cljs.core.MapEntry(k,(function (){var G__21647 = v;
 if(self__.recursive_QMARK_){
-return cljs_bean.core.__GT_val(G__21616,self__.prop__GT_key,self__.key__GT_prop);
+return cljs_bean.core.__GT_val(G__21647,self__.prop__GT_key,self__.key__GT_prop);
 } else {
-return G__21616;
+return G__21647;
 }
 })(),null));
 }
@@ -658,57 +658,57 @@ return coll.cljs$core$ILookup$_lookup$arity$3(null,k,not_found);
 (cljs_bean.core.Bean.prototype.forEach = (function (f){
 var self__ = this;
 var coll = this;
-var seq__21619 = cljs.core.seq(coll);
-var chunk__21620 = null;
-var count__21621 = (0);
-var i__21622 = (0);
+var seq__21649 = cljs.core.seq(coll);
+var chunk__21650 = null;
+var count__21651 = (0);
+var i__21652 = (0);
 while(true){
-if((i__21622 < count__21621)){
-var vec__21631 = chunk__21620.cljs$core$IIndexed$_nth$arity$2(null,i__21622);
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__21631,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__21631,(1),null);
+if((i__21652 < count__21651)){
+var vec__21660 = chunk__21650.cljs$core$IIndexed$_nth$arity$2(null,i__21652);
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__21660,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__21660,(1),null);
 (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(v,k) : f.call(null,v,k));
 
 
-var G__21796 = seq__21619;
-var G__21797 = chunk__21620;
-var G__21798 = count__21621;
-var G__21799 = (i__21622 + (1));
-seq__21619 = G__21796;
-chunk__21620 = G__21797;
-count__21621 = G__21798;
-i__21622 = G__21799;
+var G__21779 = seq__21649;
+var G__21780 = chunk__21650;
+var G__21781 = count__21651;
+var G__21782 = (i__21652 + (1));
+seq__21649 = G__21779;
+chunk__21650 = G__21780;
+count__21651 = G__21781;
+i__21652 = G__21782;
 continue;
 } else {
-var temp__5804__auto__ = cljs.core.seq(seq__21619);
+var temp__5804__auto__ = cljs.core.seq(seq__21649);
 if(temp__5804__auto__){
-var seq__21619__$1 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(seq__21619__$1)){
-var c__5568__auto__ = cljs.core.chunk_first(seq__21619__$1);
-var G__21800 = cljs.core.chunk_rest(seq__21619__$1);
-var G__21801 = c__5568__auto__;
-var G__21802 = cljs.core.count(c__5568__auto__);
-var G__21803 = (0);
-seq__21619 = G__21800;
-chunk__21620 = G__21801;
-count__21621 = G__21802;
-i__21622 = G__21803;
+var seq__21649__$1 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(seq__21649__$1)){
+var c__5568__auto__ = cljs.core.chunk_first(seq__21649__$1);
+var G__21783 = cljs.core.chunk_rest(seq__21649__$1);
+var G__21784 = c__5568__auto__;
+var G__21785 = cljs.core.count(c__5568__auto__);
+var G__21786 = (0);
+seq__21649 = G__21783;
+chunk__21650 = G__21784;
+count__21651 = G__21785;
+i__21652 = G__21786;
 continue;
 } else {
-var vec__21635 = cljs.core.first(seq__21619__$1);
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__21635,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__21635,(1),null);
+var vec__21663 = cljs.core.first(seq__21649__$1);
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__21663,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__21663,(1),null);
 (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(v,k) : f.call(null,v,k));
 
 
-var G__21804 = cljs.core.next(seq__21619__$1);
-var G__21805 = null;
-var G__21806 = (0);
-var G__21807 = (0);
-seq__21619 = G__21804;
-chunk__21620 = G__21805;
-count__21621 = G__21806;
-i__21622 = G__21807;
+var G__21787 = cljs.core.next(seq__21649__$1);
+var G__21788 = null;
+var G__21789 = (0);
+var G__21790 = (0);
+seq__21649 = G__21787;
+chunk__21650 = G__21788;
+count__21651 = G__21789;
+i__21652 = G__21790;
 continue;
 }
 } else {
@@ -722,11 +722,11 @@ break;
 (cljs_bean.core.Bean.prototype.cljs$core$ILookup$_lookup$arity$2 = (function (_,k){
 var self__ = this;
 var ___$1 = this;
-var G__21639 = (self__.obj[(self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1 ? self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1(k) : self__.key__GT_prop.call(null,k))]);
+var G__21666 = (self__.obj[(self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1 ? self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1(k) : self__.key__GT_prop.call(null,k))]);
 if(self__.recursive_QMARK_){
-return cljs_bean.core.__GT_val(G__21639,self__.prop__GT_key,self__.key__GT_prop);
+return cljs_bean.core.__GT_val(G__21666,self__.prop__GT_key,self__.key__GT_prop);
 } else {
-return G__21639;
+return G__21666;
 }
 }));
 
@@ -734,11 +734,11 @@ return G__21639;
 var self__ = this;
 var ___$1 = this;
 var ret = cljs_bean.core.goog$module$goog$object.get(self__.obj,(self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1 ? self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1(k) : self__.key__GT_prop.call(null,k)),not_found);
-var G__21640 = ret;
+var G__21667 = ret;
 if(((self__.recursive_QMARK_) && ((!((ret === not_found)))))){
-return cljs_bean.core.__GT_val(G__21640,self__.prop__GT_key,self__.key__GT_prop);
+return cljs_bean.core.__GT_val(G__21667,self__.prop__GT_key,self__.key__GT_prop);
 } else {
-return G__21640;
+return G__21667;
 }
 }));
 
@@ -747,16 +747,16 @@ var self__ = this;
 var ___$1 = this;
 try{var result = cljs.core.volatile_BANG_(init);
 cljs_bean.core.goog$module$goog$object.forEach(self__.obj,(function (v,k,___$2){
-var r = result.cljs$core$IVolatile$_vreset_BANG_$arity$2(null,(function (){var G__21643 = result.cljs$core$IDeref$_deref$arity$1(null);
-var G__21644 = (self__.prop__GT_key.cljs$core$IFn$_invoke$arity$1 ? self__.prop__GT_key.cljs$core$IFn$_invoke$arity$1(k) : self__.prop__GT_key.call(null,k));
-var G__21645 = (function (){var G__21646 = v;
+var r = result.cljs$core$IVolatile$_vreset_BANG_$arity$2(null,(function (){var G__21671 = result.cljs$core$IDeref$_deref$arity$1(null);
+var G__21672 = (self__.prop__GT_key.cljs$core$IFn$_invoke$arity$1 ? self__.prop__GT_key.cljs$core$IFn$_invoke$arity$1(k) : self__.prop__GT_key.call(null,k));
+var G__21673 = (function (){var G__21674 = v;
 if(self__.recursive_QMARK_){
-return cljs_bean.core.__GT_val(G__21646,self__.prop__GT_key,self__.key__GT_prop);
+return cljs_bean.core.__GT_val(G__21674,self__.prop__GT_key,self__.key__GT_prop);
 } else {
-return G__21646;
+return G__21674;
 }
 })();
-return (f.cljs$core$IFn$_invoke$arity$3 ? f.cljs$core$IFn$_invoke$arity$3(G__21643,G__21644,G__21645) : f.call(null,G__21643,G__21644,G__21645));
+return (f.cljs$core$IFn$_invoke$arity$3 ? f.cljs$core$IFn$_invoke$arity$3(G__21671,G__21672,G__21673) : f.call(null,G__21671,G__21672,G__21673));
 })());
 if(cljs.core.reduced_QMARK_(r)){
 throw r;
@@ -766,7 +766,7 @@ return null;
 }));
 
 return cljs.core.deref(result);
-}catch (e21642){var x = e21642;
+}catch (e21669){var x = e21669;
 if(cljs.core.reduced_QMARK_(x)){
 return cljs.core.deref(x);
 } else {
@@ -860,19 +860,19 @@ return cljs.core._reduce(coll__$1.cljs$core$ISeqable$_seq$arity$1(null),f);
 var self__ = this;
 var coll__$1 = this;
 return coll__$1.cljs$core$IKVReduce$_kv_reduce$arity$3(null,(function (r,k,v){
-var G__21651 = r;
-var G__21652 = (new cljs.core.MapEntry(k,v,null));
-return (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(G__21651,G__21652) : f.call(null,G__21651,G__21652));
+var G__21676 = r;
+var G__21677 = (new cljs.core.MapEntry(k,v,null));
+return (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(G__21676,G__21677) : f.call(null,G__21676,G__21677));
 }),start);
 }));
 
 (cljs_bean.core.Bean.prototype.cljs$core$IMap$_dissoc$arity$2 = (function (_,k){
 var self__ = this;
 var ___$1 = this;
-return (new cljs_bean.core.Bean(self__.meta,(function (){var G__21654 = cljs_bean.core.goog$module$goog$object.clone(self__.obj);
-delete G__21654[(self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1 ? self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1(k) : self__.key__GT_prop.call(null,k))];
+return (new cljs_bean.core.Bean(self__.meta,(function (){var G__21678 = cljs_bean.core.goog$module$goog$object.clone(self__.obj);
+delete G__21678[(self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1 ? self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1(k) : self__.key__GT_prop.call(null,k))];
 
-return G__21654;
+return G__21678;
 })(),self__.prop__GT_key,self__.key__GT_prop,self__.recursive_QMARK_,null,null,null));
 }));
 
@@ -882,16 +882,16 @@ var ___$1 = this;
 if(cljs_bean.core.snapshot_QMARK_(k,v,self__.prop__GT_key,self__.recursive_QMARK_)){
 return cljs.core._assoc(cljs.core.with_meta(cljs_bean.core.snapshot(self__.obj,self__.prop__GT_key,self__.key__GT_prop,self__.recursive_QMARK_),self__.meta),k,v);
 } else {
-return (new cljs_bean.core.Bean(self__.meta,(function (){var G__21656 = cljs_bean.core.goog$module$goog$object.clone(self__.obj);
-(G__21656[(self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1 ? self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1(k) : self__.key__GT_prop.call(null,k))] = (function (){var G__21657 = v;
+return (new cljs_bean.core.Bean(self__.meta,(function (){var G__21679 = cljs_bean.core.goog$module$goog$object.clone(self__.obj);
+(G__21679[(self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1 ? self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1(k) : self__.key__GT_prop.call(null,k))] = (function (){var G__21680 = v;
 if(self__.recursive_QMARK_){
-return cljs_bean.core.unwrap(G__21657);
+return cljs_bean.core.unwrap(G__21680);
 } else {
-return G__21657;
+return G__21680;
 }
 })());
 
-return G__21656;
+return G__21679;
 })(),self__.prop__GT_key,self__.key__GT_prop,self__.recursive_QMARK_,null,null,null));
 }
 }));
@@ -936,8 +936,8 @@ return cljs_bean.from.cljs.core.PersistentArrayMap_conj(coll__$1,entry);
 (cljs_bean.core.Bean.prototype.call = (function (unused__11783__auto__){
 var self__ = this;
 var self__ = this;
-var G__21661 = (arguments.length - (1));
-switch (G__21661) {
+var G__21681 = (arguments.length - (1));
+switch (G__21681) {
 case (1):
 return self__.cljs$core$IFn$_invoke$arity$1((arguments[(1)]));
 
@@ -952,20 +952,20 @@ throw (new Error(["Invalid arity: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(
 }
 }));
 
-(cljs_bean.core.Bean.prototype.apply = (function (self__,args21614){
+(cljs_bean.core.Bean.prototype.apply = (function (self__,args21646){
 var self__ = this;
 var self____$1 = this;
-return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone(args21614)));
+return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone(args21646)));
 }));
 
 (cljs_bean.core.Bean.prototype.cljs$core$IFn$_invoke$arity$1 = (function (k){
 var self__ = this;
 var _ = this;
-var G__21663 = (self__.obj[(self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1 ? self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1(k) : self__.key__GT_prop.call(null,k))]);
+var G__21682 = (self__.obj[(self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1 ? self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1(k) : self__.key__GT_prop.call(null,k))]);
 if(self__.recursive_QMARK_){
-return cljs_bean.core.__GT_val(G__21663,self__.prop__GT_key,self__.key__GT_prop);
+return cljs_bean.core.__GT_val(G__21682,self__.prop__GT_key,self__.key__GT_prop);
 } else {
-return G__21663;
+return G__21682;
 }
 }));
 
@@ -973,11 +973,11 @@ return G__21663;
 var self__ = this;
 var _ = this;
 var ret = cljs_bean.core.goog$module$goog$object.get(self__.obj,(self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1 ? self__.key__GT_prop.cljs$core$IFn$_invoke$arity$1(k) : self__.key__GT_prop.call(null,k)),not_found);
-var G__21665 = ret;
+var G__21683 = ret;
 if(((self__.recursive_QMARK_) && ((!((ret === not_found)))))){
-return cljs_bean.core.__GT_val(G__21665,self__.prop__GT_key,self__.key__GT_prop);
+return cljs_bean.core.__GT_val(G__21683,self__.prop__GT_key,self__.key__GT_prop);
 } else {
-return G__21665;
+return G__21683;
 }
 }));
 
@@ -1143,8 +1143,8 @@ return not_found;
 (cljs_bean.core.TransientArrayVector.prototype.call = (function (unused__11783__auto__){
 var self__ = this;
 var self__ = this;
-var G__21676 = (arguments.length - (1));
-switch (G__21676) {
+var G__21685 = (arguments.length - (1));
+switch (G__21685) {
 case (1):
 return self__.cljs$core$IFn$_invoke$arity$1((arguments[(1)]));
 
@@ -1159,10 +1159,10 @@ throw (new Error(["Invalid arity: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(
 }
 }));
 
-(cljs_bean.core.TransientArrayVector.prototype.apply = (function (self__,args21672){
+(cljs_bean.core.TransientArrayVector.prototype.apply = (function (self__,args21684){
 var self__ = this;
 var self____$1 = this;
-return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone(args21672)));
+return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone(args21684)));
 }));
 
 (cljs_bean.core.TransientArrayVector.prototype.cljs$core$IFn$_invoke$arity$1 = (function (k){
@@ -1283,56 +1283,56 @@ return this$.cljs$core$IEquiv$_equiv$arity$2(null,other);
 }));
 
 (cljs_bean.core.ArrayVectorSeq.prototype.indexOf = (function() {
-var G__21820 = null;
-var G__21820__1 = (function (x){
+var G__21810 = null;
+var G__21810__1 = (function (x){
 var self__ = this;
 var coll = this;
 return cljs_bean.from.cljs.core._indexOf.cljs$core$IFn$_invoke$arity$3(coll,x,(0));
 });
-var G__21820__2 = (function (x,start){
+var G__21810__2 = (function (x,start){
 var self__ = this;
 var coll = this;
 return cljs_bean.from.cljs.core._indexOf.cljs$core$IFn$_invoke$arity$3(coll,x,start);
 });
-G__21820 = function(x,start){
+G__21810 = function(x,start){
 switch(arguments.length){
 case 1:
-return G__21820__1.call(this,x);
+return G__21810__1.call(this,x);
 case 2:
-return G__21820__2.call(this,x,start);
+return G__21810__2.call(this,x,start);
 }
 throw(new Error('Invalid arity: ' + arguments.length));
 };
-G__21820.cljs$core$IFn$_invoke$arity$1 = G__21820__1;
-G__21820.cljs$core$IFn$_invoke$arity$2 = G__21820__2;
-return G__21820;
+G__21810.cljs$core$IFn$_invoke$arity$1 = G__21810__1;
+G__21810.cljs$core$IFn$_invoke$arity$2 = G__21810__2;
+return G__21810;
 })()
 );
 
 (cljs_bean.core.ArrayVectorSeq.prototype.lastIndexOf = (function() {
-var G__21823 = null;
-var G__21823__1 = (function (x){
+var G__21811 = null;
+var G__21811__1 = (function (x){
 var self__ = this;
 var coll = this;
 return cljs_bean.from.cljs.core._lastIndexOf.cljs$core$IFn$_invoke$arity$3(coll,x,cljs.core.count(coll));
 });
-var G__21823__2 = (function (x,start){
+var G__21811__2 = (function (x,start){
 var self__ = this;
 var coll = this;
 return cljs_bean.from.cljs.core._lastIndexOf.cljs$core$IFn$_invoke$arity$3(coll,x,start);
 });
-G__21823 = function(x,start){
+G__21811 = function(x,start){
 switch(arguments.length){
 case 1:
-return G__21823__1.call(this,x);
+return G__21811__1.call(this,x);
 case 2:
-return G__21823__2.call(this,x,start);
+return G__21811__2.call(this,x,start);
 }
 throw(new Error('Invalid arity: ' + arguments.length));
 };
-G__21823.cljs$core$IFn$_invoke$arity$1 = G__21823__1;
-G__21823.cljs$core$IFn$_invoke$arity$2 = G__21823__2;
-return G__21823;
+G__21811.cljs$core$IFn$_invoke$arity$1 = G__21811__1;
+G__21811.cljs$core$IFn$_invoke$arity$2 = G__21811__2;
+return G__21811;
 })()
 );
 
@@ -1543,56 +1543,56 @@ return this$.cljs$core$IEquiv$_equiv$arity$2(null,other);
 }));
 
 (cljs_bean.core.ArrayVector.prototype.indexOf = (function() {
-var G__21854 = null;
-var G__21854__1 = (function (x){
+var G__21819 = null;
+var G__21819__1 = (function (x){
 var self__ = this;
 var coll = this;
 return cljs_bean.from.cljs.core._indexOf.cljs$core$IFn$_invoke$arity$3(coll,x,(0));
 });
-var G__21854__2 = (function (x,start){
+var G__21819__2 = (function (x,start){
 var self__ = this;
 var coll = this;
 return cljs_bean.from.cljs.core._indexOf.cljs$core$IFn$_invoke$arity$3(coll,x,start);
 });
-G__21854 = function(x,start){
+G__21819 = function(x,start){
 switch(arguments.length){
 case 1:
-return G__21854__1.call(this,x);
+return G__21819__1.call(this,x);
 case 2:
-return G__21854__2.call(this,x,start);
+return G__21819__2.call(this,x,start);
 }
 throw(new Error('Invalid arity: ' + arguments.length));
 };
-G__21854.cljs$core$IFn$_invoke$arity$1 = G__21854__1;
-G__21854.cljs$core$IFn$_invoke$arity$2 = G__21854__2;
-return G__21854;
+G__21819.cljs$core$IFn$_invoke$arity$1 = G__21819__1;
+G__21819.cljs$core$IFn$_invoke$arity$2 = G__21819__2;
+return G__21819;
 })()
 );
 
 (cljs_bean.core.ArrayVector.prototype.lastIndexOf = (function() {
-var G__21855 = null;
-var G__21855__1 = (function (x){
+var G__21820 = null;
+var G__21820__1 = (function (x){
 var self__ = this;
 var coll = this;
 return cljs_bean.from.cljs.core._lastIndexOf.cljs$core$IFn$_invoke$arity$2(coll,x);
 });
-var G__21855__2 = (function (x,start){
+var G__21820__2 = (function (x,start){
 var self__ = this;
 var coll = this;
 return cljs_bean.from.cljs.core._lastIndexOf.cljs$core$IFn$_invoke$arity$3(coll,x,start);
 });
-G__21855 = function(x,start){
+G__21820 = function(x,start){
 switch(arguments.length){
 case 1:
-return G__21855__1.call(this,x);
+return G__21820__1.call(this,x);
 case 2:
-return G__21855__2.call(this,x,start);
+return G__21820__2.call(this,x,start);
 }
 throw(new Error('Invalid arity: ' + arguments.length));
 };
-G__21855.cljs$core$IFn$_invoke$arity$1 = G__21855__1;
-G__21855.cljs$core$IFn$_invoke$arity$2 = G__21855__2;
-return G__21855;
+G__21820.cljs$core$IFn$_invoke$arity$1 = G__21820__1;
+G__21820.cljs$core$IFn$_invoke$arity$2 = G__21820__2;
+return G__21820;
 })()
 );
 
@@ -1620,18 +1620,18 @@ var init__$2 = (function (){var j = (0);
 var init__$2 = init__$1;
 while(true){
 if((j < len)){
-var init__$3 = (function (){var G__21694 = init__$2;
-var G__21695 = (j + i);
-var G__21696 = cljs_bean.core.__GT_val((self__.arr[j]),self__.prop__GT_key,self__.key__GT_prop);
-return (f.cljs$core$IFn$_invoke$arity$3 ? f.cljs$core$IFn$_invoke$arity$3(G__21694,G__21695,G__21696) : f.call(null,G__21694,G__21695,G__21696));
+var init__$3 = (function (){var G__21714 = init__$2;
+var G__21715 = (j + i);
+var G__21716 = cljs_bean.core.__GT_val((self__.arr[j]),self__.prop__GT_key,self__.key__GT_prop);
+return (f.cljs$core$IFn$_invoke$arity$3 ? f.cljs$core$IFn$_invoke$arity$3(G__21714,G__21715,G__21716) : f.call(null,G__21714,G__21715,G__21716));
 })();
 if(cljs.core.reduced_QMARK_(init__$3)){
 return init__$3;
 } else {
-var G__21856 = (j + (1));
-var G__21857 = init__$3;
-j = G__21856;
-init__$2 = G__21857;
+var G__21821 = (j + (1));
+var G__21822 = init__$3;
+j = G__21821;
+init__$2 = G__21822;
 continue;
 }
 } else {
@@ -1643,10 +1643,10 @@ break;
 if(cljs.core.reduced_QMARK_(init__$2)){
 return cljs.core.deref(init__$2);
 } else {
-var G__21858 = (i + len);
-var G__21859 = init__$2;
-i = G__21858;
-init__$1 = G__21859;
+var G__21823 = (i + len);
+var G__21824 = init__$2;
+i = G__21823;
+init__$1 = G__21824;
 continue;
 }
 } else {
@@ -1856,8 +1856,8 @@ return (new cljs_bean.core.ArrayVector(self__.meta,self__.prop__GT_key,self__.ke
 (cljs_bean.core.ArrayVector.prototype.call = (function (unused__11783__auto__){
 var self__ = this;
 var self__ = this;
-var G__21716 = (arguments.length - (1));
-switch (G__21716) {
+var G__21724 = (arguments.length - (1));
+switch (G__21724) {
 case (1):
 return self__.cljs$core$IFn$_invoke$arity$1((arguments[(1)]));
 
@@ -1872,10 +1872,10 @@ throw (new Error(["Invalid arity: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(
 }
 }));
 
-(cljs_bean.core.ArrayVector.prototype.apply = (function (self__,args21686){
+(cljs_bean.core.ArrayVector.prototype.apply = (function (self__,args21701){
 var self__ = this;
 var self____$1 = this;
-return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone(args21686)));
+return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone(args21701)));
 }));
 
 (cljs_bean.core.ArrayVector.prototype.cljs$core$IFn$_invoke$arity$1 = (function (k){
@@ -1941,8 +1941,8 @@ return null;
  *   Calling (bean) produces an empty bean.
  */
 cljs_bean.core.bean = (function cljs_bean$core$bean(var_args){
-var G__21726 = arguments.length;
-switch (G__21726) {
+var G__21730 = arguments.length;
+switch (G__21730) {
 case 0:
 return cljs_bean.core.bean.cljs$core$IFn$_invoke$arity$0();
 
@@ -1953,14 +1953,14 @@ return cljs_bean.core.bean.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 break;
 default:
 var args_arr__5794__auto__ = [];
-var len__5769__auto___21915 = arguments.length;
-var i__5770__auto___21916 = (0);
+var len__5769__auto___21847 = arguments.length;
+var i__5770__auto___21848 = (0);
 while(true){
-if((i__5770__auto___21916 < len__5769__auto___21915)){
-args_arr__5794__auto__.push((arguments[i__5770__auto___21916]));
+if((i__5770__auto___21848 < len__5769__auto___21847)){
+args_arr__5794__auto__.push((arguments[i__5770__auto___21848]));
 
-var G__21917 = (i__5770__auto___21916 + (1));
-i__5770__auto___21916 = G__21917;
+var G__21849 = (i__5770__auto___21848 + (1));
+i__5770__auto___21848 = G__21849;
 continue;
 } else {
 }
@@ -1982,12 +1982,12 @@ return (new cljs_bean.core.Bean(null,x,cljs.core.keyword,cljs_bean.core.default_
 }));
 
 (cljs_bean.core.bean.cljs$core$IFn$_invoke$arity$variadic = (function (x,opts){
-var map__21727 = opts;
-var map__21727__$1 = cljs.core.__destructure_map(map__21727);
-var keywordize_keys = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__21727__$1,new cljs.core.Keyword(null,"keywordize-keys","keywordize-keys",1310784252));
-var prop__GT_key = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__21727__$1,new cljs.core.Keyword(null,"prop->key","prop->key",-1297715246));
-var key__GT_prop = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__21727__$1,new cljs.core.Keyword(null,"key->prop","key->prop",-1028452531));
-var recursive = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__21727__$1,new cljs.core.Keyword(null,"recursive","recursive",718885872));
+var map__21731 = opts;
+var map__21731__$1 = cljs.core.__destructure_map(map__21731);
+var keywordize_keys = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__21731__$1,new cljs.core.Keyword(null,"keywordize-keys","keywordize-keys",1310784252));
+var prop__GT_key = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__21731__$1,new cljs.core.Keyword(null,"prop->key","prop->key",-1297715246));
+var key__GT_prop = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__21731__$1,new cljs.core.Keyword(null,"key->prop","key->prop",-1028452531));
+var recursive = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__21731__$1,new cljs.core.Keyword(null,"recursive","recursive",718885872));
 if(keywordize_keys === false){
 return (new cljs_bean.core.Bean(null,x,cljs.core.identity,cljs.core.identity,cljs.core.boolean$(recursive),null,null,null));
 } else {
@@ -2001,11 +2001,11 @@ return (new cljs_bean.core.Bean(null,x,cljs.core.keyword,cljs_bean.core.default_
 }));
 
 /** @this {Function} */
-(cljs_bean.core.bean.cljs$lang$applyTo = (function (seq21724){
-var G__21725 = cljs.core.first(seq21724);
-var seq21724__$1 = cljs.core.next(seq21724);
+(cljs_bean.core.bean.cljs$lang$applyTo = (function (seq21727){
+var G__21728 = cljs.core.first(seq21727);
+var seq21727__$1 = cljs.core.next(seq21727);
 var self__5754__auto__ = this;
-return self__5754__auto__.cljs$core$IFn$_invoke$arity$variadic(G__21725,seq21724__$1);
+return self__5754__auto__.cljs$core$IFn$_invoke$arity$variadic(G__21728,seq21727__$1);
 }));
 
 (cljs_bean.core.bean.cljs$lang$maxFixedArity = (1));
