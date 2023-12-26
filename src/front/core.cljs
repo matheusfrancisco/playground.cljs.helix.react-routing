@@ -23,16 +23,13 @@
 (defnc not-found-page []
   (dom/div "not found"))
 
-(defn routes []
-  ($ rrd/Routes
-     ($ rrd/Route {:path "/" :element ($ layout)}
-        ($ rrd/Route {:path "home-page-eg" :element ($ home-page)})
+(defnc app []
+  ($ rrd/BrowserRouter
+     ($ rrd/Routes
+        ($ rrd/Route {:path "/home-page-eg" :element ($ home-page)})
         ($ rrd/Route {:path "code-page-eg" :element ($ code-page)})
         ($ rrd/Route {:path "about-page-eg" :element ($ about-page)})
         ($ rrd/Route {:path "404" :element ($ not-found-page)}))))
-
-(defnc app []
-  ($ rrd/BrowserRouter ($ routes)))
 
 (defonce root
   (rdom/createRoot (js/document.getElementById "app")))
