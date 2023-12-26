@@ -7,9 +7,6 @@
    [helix.core :refer [$ <>]]
    [helix.dom :as dom]))
 
-(defnc providers [{:keys [children]}]
-  ($ rrd/BrowserRouter children))
-
 (defnc layout []
   (<>
    ($ rrd/Outlet)))
@@ -33,10 +30,10 @@
         ($ rrd/Route {:path "code" :element ($ code-page)})
         ($ rrd/Route {:path "about" :element ($ about-page)})
         ($ rrd/Route {:path "404" :element ($ not-found-page)}))
-     ($ rrd/Route {:path "*" :element ($ rrd/Navigate {:to "404"})})))
+     ($ rrd/Route {:path "*" :element ($ rrd/Navigate {:to "/"})})))
 
 (defnc app []
-  ($ providers ($ routes)))
+  ($ rrd/BrowserRouter ($ routes)))
 
 (defonce root
   (rdom/createRoot (js/document.getElementById "app")))

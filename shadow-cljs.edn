@@ -1,9 +1,11 @@
 ;;shadow clj config
 {:deps {:aliases [:front-dev]}
  :builds {:app {:target :browser
+                :output-dir "public/playground.cljs.helix.react-routing/js"
+                :asset-path "playground.cljs.helix.react-routing/js"
                 :devtools {:preloads [dev.refresh]
                            :reload-strategy :full
                            :http-port 8000
-                           :http-root "public"}
+                           :http-root "public/playground.cljs.helix.react-routing/"}
                 :modules  {:core {:init-fn front.core/init}}
                 :dev      {:modules {:core {:init-fn front.core/init}}}}}}

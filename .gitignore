@@ -1,6 +1,7 @@
 node_modules/
 /public/assets/
-/public/js/
+/public/playground.cljs.helix.react-routing/js
+/public/js
 
 /out
 /checkouts
